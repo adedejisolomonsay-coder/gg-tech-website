@@ -1049,28 +1049,44 @@
                 </div>
             </div>
             <div class="contact-form fade-in">
-                <form onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label>Your Name</label>
-                        <input type="text" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="tel" placeholder="Enter your phone number" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Service Needed</label>
-                        <input type="text" placeholder="e.g., Screen Repair, Phone Purchase, etc.">
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea placeholder="Describe your issue or inquiry..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
-            </div>
+                <div class="contact-form fade-in">
+    <form onsubmit="sendToWhatsApp(event)">
+        <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+            <label>Service Needed</label>
+            <input type="text" id="service" placeholder="e.g., Screen Repair, Phone Purchase, etc.">
+        </div>
+        <div class="form-group">
+            <label>Message</label>
+            <textarea id="message" placeholder="Describe your issue or inquiry..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+    </form>
+</div>
+
+<script>
+function sendToWhatsApp(e) {
+    e.preventDefault();
+    var name = document.getElementById('name').value;
+    var phone = document.getElementById('phone').value;
+    var service = document.getElementById('service').value;
+    var message = document.getElementById('message').value;
+    
+    var text = "Name: " + name + "%0APhone: " + phone + "%0AService: " + service + "%0AMessage: " + message;
+    
+    window.open("https://wa.me/2347011745790" + text, "_blank");
+}
+</script>
+
         </div>
     </section>
 
@@ -1181,6 +1197,7 @@
     </script>
 </body>
 </html>
+
 
 
 
