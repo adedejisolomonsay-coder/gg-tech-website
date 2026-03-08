@@ -831,7 +831,251 @@
             </a>
         </div>
     </div>
+
+
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-G TECH</title>
+    <!-- Your existing CSS links -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- 🔴 CODE BLOCK 1: ADD THIS CSS HERE (inside <head>) -->
+    <style>
+        #products-showcase {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 30px;
+            margin: 3rem auto;
+            max-width: 1400px;
+        }
+
+        #products-grid > div:hover {
+            border-color: rgba(0, 212, 255, 0.5) !important;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #products-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your existing Navigation -->
+    <nav>...</nav>
+
+    <!-- Your existing Hero Section with Image -->
+    <section class="hero" id="home">
+        <!-- Your hero content -->
+        <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 2;">
+            <h1>...</h1>
+        </div>
+        
+        <!-- Your image here -->
+        <div style="width: 100%; max-width: 600px; margin: 0 auto; border-radius: 20px; overflow: hidden; border: 2px solid #00d4ff;">
+            <img src="your-banner-image.jpg" alt="G-G Tech Banner" style="width: 100%; display: block;">
+        </div>
+
+        <!-- Text BELOW image (as you wanted) -->
+        <p style="font-size: 1.2rem; color: #aaa; margin-top: 2rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+            Professional mobile phone engineering, premium device sales, and quality accessories. Your trusted partner for all mobile technology needs.
+        </p>
+
+        <!-- Buttons -->
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+            <a href="#services" class="btn btn-primary">
+                <i class="fas fa-tools"></i> Our Services
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+                <i class="fas fa-phone"></i> Get in Touch
+            </a>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <!-- 🔴 CODE BLOCK 2: ADD THIS HTML SECTION HERE (after hero section, before services) -->
+    <section id="products-showcase" style="padding: 4rem 5%; margin-top: 2rem;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            
+            <!-- Section Header -->
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-family: 'Orbitron', sans-serif; font-size: 2.5rem; color: #fff; margin-bottom: 1rem;">
+                    📱 Available Gadgets
+                </h2>
+                <p style="color: #aaa; font-size: 1.1rem;">
+                    Quality used phones & accessories - Updated Daily!
+                </p>
+            </div>
+
+            <!-- Products Grid Container -->
+            <div id="products-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <!-- Products will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Load More Button -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <button onclick="loadMoreProducts()" style="background: transparent; border: 2px solid #00d4ff; color: #00d4ff; padding: 1rem 2rem; border-radius: 50px; cursor: pointer; font-size: 1rem; transition: all 0.3s;">
+                    Load More Products
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Your existing Services Section -->
+    <section class="section" id="services">
+        <div class="section-title fade-in">
+            <h2>Our Services</h2>
+            <p>Professional mobile solutions with cutting-edge technology and expertise</p>
+        </div>
+        <!-- Your 6 service cards here -->
+    </section>
+
+    <!-- Your existing Products & Accessories Section -->
+    <section id="products">...</section>
+
+    <!-- Your existing Contact Section -->
+    <section id="contact">...</section>
+
+    <!-- Your existing Footer -->
+    <footer>...</footer>
+
+    <!-- 🔴 CODE BLOCK 3: ADD THIS JAVASCRIPT HERE (before closing </body>) -->
+    <script>
+        // Product Data Array - EASY TO UPDATE DAILY
+        const products = [
+            {
+                id: 1,
+                type: 'image', // 'image' or 'video'
+                src: 'iphone-13-pro.jpg', // Your image/video file
+                title: 'iPhone 13 Pro',
+                price: '₦450,000',
+                condition: 'Used - Like New',
+                specs: '256GB | Battery 92% | Face ID ✅',
+                contact: '+234-701-1745-790'
+            },
+            {
+                id: 2,
+                type: 'video',
+                src: 'samsung-s23-demo.mp4',
+                poster: 'samsung-thumb.jpg', // Thumbnail for video
+                title: 'Samsung Galaxy S23',
+                price: '₦380,000',
+                condition: 'Used - Excellent',
+                specs: '128GB | Battery 95% | 5G Enabled',
+                contact: '+234-701-1745-790'
+            },
+            {
+                id: 3,
+                type: 'image',
+                src: 'pixel-7.jpg',
+                title: 'Google Pixel 7',
+                price: '₦280,000',
+                condition: 'Used - Good',
+                specs: '128GB | Camera Perfect | Android 14',
+                contact: '+234-701-1745-790'
+            },
+            {
+                id: 4,
+                type: 'image',
+                src: 'airpods-pro.jpg',
+                title: 'AirPods Pro 2',
+                price: '₦85,000',
+                condition: 'Used - Like New',
+                specs: 'Noise Cancellation | Wireless Charging',
+                contact: '+234-701-1745-790'
+            },
+            {
+                id: 5,
+                type: 'video',
+                src: 'iphone-12-review.mp4',
+                poster: 'iphone-12-thumb.jpg',
+                title: 'iPhone 12',
+                price: '₦320,000',
+                condition: 'Used - Excellent',
+                specs: '128GB | Battery 88% | No Scratches',
+                contact: '+234-701-1745-790'
+            }
+        ];
+
+        // Function to render products
+        function renderProducts() {
+            const grid = document.getElementById('products-grid');
+            grid.innerHTML = '';
+
+            products.forEach(product => {
+                const card = document.createElement('div');
+                card.style.cssText = `
+                    background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+                    border-radius: 20px;
+                    overflow: hidden;
+                    border: 1px solid rgba(0, 212, 255, 0.1);
+                    transition: transform 0.3s, box-shadow 0.3s;
+                `;
+                card.onmouseover = () => {
+                    card.style.transform = 'translateY(-10px)';
+                    card.style.boxShadow = '0 20px 40px rgba(0, 212, 255, 0.2)';
+                };
+                card.onmouseout = () => {
+                    card.style.transform = 'translateY(0)';
+                    card.style.boxShadow = 'none';
+                };
+
+                // Media content (Image or Video)
+                let mediaContent = '';
+                if (product.type === 'video') {
+                    mediaContent = `
+                        <video width="100%" height="250" controls poster="${product.poster}" 
+                            style="object-fit: cover; display: block;">
+                            <source src="${product.src}" type="video/mp4">
+                        </video>
+                    `;
+                } else {
+                    mediaContent = `
+                        <img src="${product.src}" alt="${product.title}" 
+                            style="width: 100%; height: 250px; object-fit: cover; display: block;">
+                    `;
+                }
+
+                card.innerHTML = `
+                    ${mediaContent}
+                    <div style="padding: 1.5rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <h3 style="color: #fff; font-size: 1.3rem; margin: 0;">${product.title}</h3>
+                            <span style="background: #00d4ff; color: #000; padding: 0.3rem 0.8rem; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">
+                                ${product.price}
+                            </span>
+                        </div>
+                        <p style="color: #00d4ff; font-size: 0.9rem; margin-bottom: 0.5rem;">${product.condition}</p>
+                        <p style="color: #aaa; font-size: 0.85rem; margin-bottom: 1rem; line-height: 1.5;">${product.specs}</p>
+                        <a href="https://wa.me/${product.contact.replace(/[^0-9]/g, '')}" 
+                            style="display: block; background: #25d366; color: #fff; text-align: center; padding: 0.8rem; border-radius: 10px; text-decoration: none; font-weight: bold;">
+                            💬 Buy on WhatsApp
+                        </a>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // Load more function (placeholder for pagination)
+        function loadMoreProducts() {
+            alert('More products coming soon! Add new items to the products array.');
+        }
+
+        // Render on page load
+        document.addEventListener('DOMContentLoaded', renderProducts);
+    </script>
+
+</body>
+</html>
+
 
     <!-- Services Section -->
         <section class="section" id="services">
@@ -1321,6 +1565,7 @@ function sendToWhatsApp(e) {
     </script>
 </body>
 </html>
+
 
 
 
