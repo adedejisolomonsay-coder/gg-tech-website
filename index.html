@@ -996,22 +996,26 @@
                 grid.appendChild(card);
             });
         }
-
         // Load more function (placeholder for pagination)
         function loadMoreProducts() {
             alert('More products coming soon! Add new items to the products array.');
-        }
-    </script>
-</section>
-
-<!-- Services Section -->
-<section class="section" id="services">
-    <div class="section-title fade-in">
-        <h2>Our Services</h2>
-        <p>Professional mobile solutions with cutting-edge technology and expertise</p>
+        <div class="services-grid">
+            <div class="service-card fade-in" style="background-image: url('Screen Repair.jpg'); background-size: cover; background-position: center; position: relative;">
+    <div style="background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: inherit;"></div>
+    <div class="service-icon" style="position: relative; z-index: 1;">
+        <i class="fas fa-mobile-screen"></i>
     </div>
-    <div class="services-grid">
-
+    <h3 style="position: relative; z-index: 1;">Screen Repair.jpg</h3>
+    <p style="position: relative; z-index: 1;">Expert screen replacement...</p>
+</div>
+            <div class="service-card fade-in" style="background-image: url('Battery Replacement.jpg'); background-size: cover; background-position: center; position: relative;">
+    <div style="background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: inherit;"></div>
+    <div class="service-icon" style="position: relative; z-index: 1;">
+        <i class="fas fa-battery-full"></i>
+    </div>
+    <h3 style="position: relative; z-index: 1;">Battery Replacement.jpg</h3>
+    <p style="position: relative; z-index: 1;">Restore your phone's battery life with our high-capacity replacement batteries. Quick service while you wait.</p>
+</div>
             <div class="service-card fade-in" style="background-image: url('Water Damage Repair.jpg'); background-size: cover; background-position: center; position: relative;">
     <div style="background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: inherit;"></div>
     <div class="service-icon" style="position: relative; z-index: 1;">
@@ -1476,6 +1480,7 @@ function sendToWhatsApp(e) {
     </script>
 </body>
 </html>
+
 
 
 
