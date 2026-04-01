@@ -51,13 +51,19 @@
 
 
         body {
-  font-family: 'Roboto', sans-serif;
-  background: var(--darker);
-  color: var(--light);
-  overflow-x: hidden;
-  line-height: 1.6;
-  padding-top: 120px;     /* ←←← THIS IS THE ONLY NEW LINE */
-            }
+
+            font-family: 'Roboto', sans-serif;
+
+            background: var(--darker);
+
+            color: var(--light);
+
+            overflow-x: hidden;
+
+            line-height: 1.6;
+
+        }
+
 
 
         /* Animated Background */
@@ -121,12 +127,26 @@
         /* Navigation */
 
         nav {
-nav {
-  position: fixed;
-  top: 58px;               /* ←←← CHANGE FROM 0 to 58px */
-  width: 100%;
-  ...
-}
+
+            position: fixed;
+
+            top: 0;
+
+            width: 100%;
+
+            background: rgba(10, 10, 10, 0.95);
+
+            backdrop-filter: blur(10px);
+
+            z-index: 1000;
+
+            padding: 1rem 5%;
+
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+
+        }
+
+
 
         .nav-container {
 
@@ -161,42 +181,12 @@ nav {
             text-decoration: none;
 
             display: flex;
-/* ====================== SCROLLING MARQUEE ====================== */
-.scrolling-marquee {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 58px;
-  background: var(--primary);
-  color: var(--darker);
-  overflow: hidden;
-  z-index: 9999;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.15rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-}
 
-.marquee-content {
-  display: inline-block;
-  animation: marquee-scroll 35s linear infinite;
-  padding-left: 30px;
-}
+            align-items: center;
 
-@keyframes marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+            gap: 0.5rem;
 
-.scrolling-marquee:hover .marquee-content {
-  animation-play-state: paused;
-}
+        }
 
 
 
