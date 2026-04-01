@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
 /* Scrolling Title Marquee */
 .marquee-wrapper {
   width: 100%;
@@ -45,6 +46,7 @@
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+</style>
     <style>
         :root {
             --primary: #00d4ff;
@@ -64,11 +66,15 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            background: var(--darker);
-            color: var(--light);
-            overflow-x: hidden;
-            line-height: 1.6;
+            <!-- Scrolling Title -->
+<div class="marquee-wrapper">
+  <div class="marquee-track">
+    <span class="marquee-text">G-G TECH &amp; COMMUNICATION &nbsp;⚡&nbsp;</span>
+    <span class="marquee-text">G-G TECH &amp; COMMUNICATION &nbsp;⚡&nbsp;</span>
+    <span class="marquee-text">G-G TECH &amp; COMMUNICATION &nbsp;⚡&nbsp;</span>
+    <span class="marquee-text">G-G TECH &amp; COMMUNICATION &nbsp;⚡&nbsp;</span>
+  </div>
+</div>
         }
 
         /* Animated Background */
