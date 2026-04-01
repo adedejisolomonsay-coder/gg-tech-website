@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Scrolling Title -->
-<div class="marquee-wrapper">
-  <div class="marquee-track">
-    <span class="marquee-text">G-G TECH &amp; COMMUNICATION &nbsp;⚡&nbsp;</span>
-    <span class="marquee-text">G-G TECH &amp; COMMUNICATION &nbsp;⚡&nbsp;</span>
-    <span class="marquee-text">G-G TECH &amp; COMMUNICATION &nbsp;⚡&nbsp;</span>
-    <span class="marquee-text">G-G TECH &amp; COMMUNICATION &nbsp;⚡&nbsp;</span>
-  </div>
-</div>
+/* Scrolling Title Marquee */
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0 10px;
+  position: relative;
+}
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 60px;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #050505, transparent);
+}
+.marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #050505, transparent);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 14s linear infinite;
+}
+.marquee-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: #00d4ff;
+  text-shadow: 0 0 12px rgba(0,212,255,0.8), 0 0 30px rgba(0,212,255,0.4);
+  white-space: nowrap;
+  padding: 0 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
     <style>
         :root {
             --primary: #00d4ff;
