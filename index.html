@@ -162,6 +162,40 @@ nav {
 
             display: flex;
 
+            /* ====================== SCROLLING MARQUEE ====================== */
+.scrolling-marquee {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--primary);
+  color: var(--darker);
+  padding: 14px 0;
+  overflow: hidden;
+  z-index: 9999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee-scroll 35s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.scrolling-marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
             align-items: center;
 
             gap: 0.5rem;
