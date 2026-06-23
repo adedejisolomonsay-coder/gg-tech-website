@@ -32,56 +32,7 @@
 <body>
     
 
-        :root {
 
-            --primary: #00d4ff;
-
-            --secondary: #0099cc;
-
-            --dark: #0a0a0a;
-
-            --darker: #050505;
-
-            --light: #ffffff;
-
-            --accent: #ff6b6b;
-
-            --success: #00ff88;
-
-            --glass: rgba(255, 255, 255, 0.05);
-
-            /* Marquee Scrolling Text */
-.marquee-container {
-    width: 100%;
-    overflow: hidden;
-    background: var(--primary);
-    color: var(--light);
-    padding: 10px 0;
-    position: relative;
-    z-index: 100;
-}
-
-.marquee-content {
-    display: flex;
-    width: max-content;
-    animation: marquee-scroll 15s linear infinite;
-}
-
-.marquee-content span {
-    white-space: nowrap;
-    padding: 0 50px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-@keyframes marquee-scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-25%); }
-            
-        }
 
 
 
@@ -91,7 +42,31 @@
 
             padding: 0;
 
-            box-sizing: border-box;
+    <head>
+    <meta ...>
+    <title>...</title>
+    <link ...>
+    
+    <style>
+        /* ALL CSS GOES HERE */
+        :root { ... }
+        .marquee-container { ... }
+        .marquee-content { ... }
+        @keyframes marquee-scroll { ... }
+        * { ... }
+        body { ... }
+        /* etc. */
+    </style>
+    
+</head>
+
+<!-- MARQUEE HTML -->
+<div class="marquee-container">...</div>
+
+<body>
+    <!-- Page content -->
+</body>
+        box-sizing: border-box;
 
         }
 
