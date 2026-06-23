@@ -59,8 +59,18 @@
 
         /* Animated Background */
 
-        background: #ffffff;
-
+        .bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('My Sho2.jpg');
+    background-size: cover;        /* Covers entire screen */
+    background-position: center;   /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents tiling */
+}
 
 
         .bg-animation::before {
