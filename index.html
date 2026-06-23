@@ -1,93 +1,93 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>G-G Tech and Communication | Mobile Phone Repair & Sales</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-     </style>
-
-  </head>
-  
-  <!-- MARQUEE HTML START -->
-  <div class="marquee-container">
-     <div class="marquee-content">
-         <span>GOD'S GRACE TECH & COMMUNICATION</span>
-         <span>GOD'S GRACE TECH & COMMUNICATION</span>
-        <span>GOD'S GRACE TECH & COMMUNICATION</span>
-         <span>GOD'S GRACE TECH & COMMUNICATION</span>
-      </div>
-</div>
-  <!-- MARQUEE HTML END -->
-
-<body>
     
-
-
-
-
-
-        * {
-
-            margin: 0;
-
-            padding: 0;
-
-    <head>
-    <meta ...>
-    <title>...</title>
-    <link ...>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* ALL CSS GOES HERE */
-        :root { ... }
-        .marquee-container { ... }
-        .marquee-content { ... }
-        @keyframes marquee-scroll { ... }
-        * { ... }
-        body { ... }
-        /* etc. */
+        /* ===== ALL CSS GOES HERE ===== */
+        
+        :root {
+            --primary: #00d4ff;
+            --secondary: #0099cc;
+            --dark: #0a0a0a;
+            --darker: #050505;
+            --light: #ffffff;
+            --accent: #ff6b6b;
+            --success: #00ff88;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Marquee Scrolling Text */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background: var(--primary);
+            color: var(--light);
+            padding: 10px 0;
+            position: relative;
+            z-index: 100;
+        }
+
+        .marquee-content {
+            display: flex;
+            width: max-content;
+            animation: marquee-scroll 15s linear infinite;
+        }
+
+        .marquee-content span {
+            white-space: nowrap;
+            padding: 0 50px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        @keyframes marquee-scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-25%); }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--darker);
+            color: var(--light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* ... rest of your CSS ... */
+        
     </style>
     
 </head>
 
-<!-- MARQUEE HTML -->
-<div class="marquee-container">...</div>
-
 <body>
-    <!-- Page content -->
+    <!-- MARQUEE HTML - NOW INSIDE BODY -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>GOD'S GRACE TECH & COMMUNICATION</span>
+            <span>GOD'S GRACE TECH & COMMUNICATION</span>
+            <span>GOD'S GRACE TECH & COMMUNICATION</span>
+            <span>GOD'S GRACE TECH & COMMUNICATION</span>
+        </div>
+    </div>
+
+    <!-- Your page content -->
 </body>
-        box-sizing: border-box;
-
-        }
-
-        
-        body {
-
-            font-family: 'Roboto', sans-serif;
-
-            background: var(--darker);
-
-            color: var(--light);
-
-            overflow-x: hidden;
-
-            line-height: 1.6;
-
-        }
-
-
-
-        /* Animated Background */
+</html>
 
         .bg-animation {
 
