@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -284,39 +285,37 @@
 
         .hero {
 
-            margin-top: 80px;
+    margin-top: 80px;
 
-            padding: 6rem 5%;
+    padding: 6rem 5%;
 
-            min-height: 100vh;
+    min-height: auto;
 
-            display: flex;
+    display: block;
 
-            align-items: center;
+    text-align: center;
 
-            position: relative;
-
-            overflow: hidden;
-
-        }
+}
 
 
 
         .hero-content {
 
-            max-width: 1400px;
+    max-width: 800px;
 
-            margin: 0 auto;
+    margin: 0 auto;
 
-            display: grid;
+    display: flex;
 
-            grid-template-columns: 1fr 1fr;
+    flex-direction: column;
 
-            gap: 4rem;
+    align-items: center;
 
-            align-items: center;
+    text-align: center;
 
-        }
+    gap: 2rem;
+
+}
 
 
 
@@ -1616,69 +1615,57 @@
 
 
 
-    <!-- Hero Section -->
+  <section class="hero" id="home" style="padding: 6rem 5%; text-align: center; position: relative;">
 
-    <section class="hero" id="home">
+    
 
-        <div class="hero-content">
+    <div style="max-width: 800px; margin: 0 auto; position: relative; z-index: 2;">
 
-            <div class="hero-text fade-in">
+        <h1 style="font-family: 'Orbitron', sans-serif; font-size: 3.5rem; font-weight: 900; margin-bottom: 1.5rem; line-height: 1.2; background: linear-gradient(45deg, #fff, #00d4ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
 
-                <h1>G-G TECH & COMMUNICATION</h1>
+            G-G<br>TECH & COMMUNICATION
 
-                <p>Professional mobile phone engineering, premium device sales, and quality accessories. Your trusted partner for all mobile technology needs.</p>
+        </h1>
 
-                <div class="cta-buttons">
+        <p style="font-size: 1.2rem; color: #aaa; margin-bottom: 2rem;">
 
-                    <a href="#services" class="btn btn-primary">
+            Professional mobile phone engineering, premium device sales, and quality accessories. Your trusted partner for all mobile technology needs.
 
-                        <i class="fas fa-tools"></i> Our Services
+        </p>
 
-                    </a>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
 
-                    <a href="#contact" class="btn btn-secondary">
+            <a href="#services" class="btn btn-primary">
 
-                        <i class="fas fa-phone"></i> Get in Touch
+                <i class="fas fa-tools"></i> Our Services
 
-                    </a>
+            </a>
 
-                </div>
+            <a href="#contact" class="btn btn-secondary">
 
-            </div>
+                <i class="fas fa-phone"></i> Get in Touch
 
-            <div class="hero-image fade-in">
-
-                <div class="phone-mockup">
-
-                    <div class="circuit-pattern"></div>
-
-                    <div class="phone-screen">
-
-                        <i class="fas fa-mobile-alt repair-icon"></i>
-
-                        <div class="screen-text">
-
-                            <h3>EXPERT REPAIR</h3>
-
-                            <p>Screen • Battery • Software</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
+            </a>
 
         </div>
 
-    </section>
+    </div>
 
+    
 
+    <!-- Image Below Only -->
+
+<div style="width: 100%; max-width: 600px; margin: 0 auto; border-radius: 20px; overflow: hidden; border: 2px solid #ccc;">
+
+    <img src="Phone repair.jpg" alt="Phone repair" style="width: 100%; display: block;">
+
+</div>
+
+</section>
 
     <!-- Services Section -->
 
-    <section class="section" id="services">
+        <section class="section" id="services">
 
         <div class="section-title fade-in">
 
@@ -1690,93 +1677,115 @@
 
         <div class="services-grid">
 
-            <div class="service-card fade-in">
+            <div class="service-card fade-in" style="background-image: url('Screen Repair.jpg'); background-size: cover; background-position: center; position: relative;">
 
-                <div class="service-icon">
+    <div style="background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: inherit;"></div>
 
-                    <i class="fas fa-mobile-screen"></i>
+    <div class="service-icon" style="position: relative; z-index: 1;">
 
-                </div>
+        <i class="fas fa-mobile-screen"></i>
 
-                <h3>Screen Repair</h3>
+    </div>
 
-                <p>Expert screen replacement for all major brands including iPhone, Samsung, Huawei, and more. We use premium quality parts with warranty.</p>
+    <h3 style="position: relative; z-index: 1;">Screen Repair.jpg</h3>
 
-            </div>
+    <p style="position: relative; z-index: 1;">Expert screen replacement...</p>
 
-            <div class="service-card fade-in">
+</div>
 
-                <div class="service-icon">
+            <div class="service-card fade-in" style="background-image: url('Battery Replacement.jpg'); background-size: cover; background-position: center; position: relative;">
 
-                    <i class="fas fa-battery-full"></i>
+    <div style="background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: inherit;"></div>
 
-                </div>
+    <div class="service-icon" style="position: relative; z-index: 1;">
 
-                <h3>Battery Replacement</h3>
+        <i class="fas fa-battery-full"></i>
 
-                <p>Restore your phone's battery life with our high-capacity replacement batteries. Quick service while you wait.</p>
+    </div>
 
-            </div>
+    <h3 style="position: relative; z-index: 1;">Battery Replacement.jpg</h3>
 
-            <div class="service-card fade-in">
+    <p style="position: relative; z-index: 1;">Restore your phone's battery life with our high-capacity replacement batteries. Quick service while you wait.</p>
 
-                <div class="service-icon">
+</div>
 
-                    <i class="fas fa-water"></i>
 
-                </div>
 
-                <h3>Water Damage Repair</h3>
+            <div class="service-card fade-in" style="background-image: url('Water Damage Repair.jpg'); background-size: cover; background-position: center; position: relative;">
 
-                <p>Advanced water damage treatment and recovery. We use ultrasonic cleaning and professional drying techniques.</p>
+    <div style="background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: inherit;"></div>
 
-            </div>
+    <div class="service-icon" style="position: relative; z-index: 1;">
 
-            <div class="service-card fade-in">
+        <i class="fas fa-water"></i>
 
-                <div class="service-icon">
+    </div>
 
-                    <i class="fas fa-unlock"></i>
+    <h3 style="position: relative; z-index: 1;">Water Damage Repair.jpg</h3>
 
-                </div>
+    <p style="position: relative; z-index: 1;">Advanced water damage treatment and recovery. We use ultrasonic cleaning and professional drying techniques.</p>
 
-                <h3>Software Unlocking</h3>
+</div>
 
-                <p>Network unlocking, FRP removal, password recovery, and software updates for all device models.</p>
 
-            </div>
 
-            <div class="service-card fade-in">
+            <div class="service-card fade-in" style="background-image: url('Software Unlocking.jpg'); background-size: cover; background-position: center; position: relative;">
 
-                <div class="service-icon">
+    <div style="background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: inherit;"></div>
 
-                    <i class="fas fa-microchip"></i>
+    <div class="service-icon" style="position: relative; z-index: 1;">
 
-                </div>
+        <i class="fas fa-unlock"></i>
 
-                <h3>IC & Board Repair</h3>
+    </div>
 
-                <p>Advanced motherboard repairs, IC replacement, and micro-soldering services by certified technicians.</p>
+    <h3 style="position: relative; z-index: 1;">Software Unlocking.jpg</h3>
 
-            </div>
+    <p style="position: relative; z-index: 1;">Network unlocking, FRP removal, password recovery, and software updates for all device models.</p>
 
-            <div class="service-card fade-in">
+</div>
 
-                <div class="service-icon">
 
-                    <i class="fas fa-database"></i>
 
-                </div>
+            <div class="service-card fade-in" style="background-image: url('IC& Board Repair.jpg'); background-size: cover; background-position: center; position: relative;">
 
-                <h3>Data Recovery</h3>
+    <div style="background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: inherit;"></div>
 
-                <p>Recover lost photos, contacts, messages, and files from damaged or corrupted devices.</p>
+    <div class="service-icon" style="position: relative; z-index: 1;">
 
-            </div>
+        <i class="fas fa-microchip"></i>
+
+    </div>
+
+    <h3 style="position: relative; z-index: 1;">IC & Board Repair.jpg</h3>
+
+    <p style="position: relative; z-index: 1;">Advanced motherboard repairs, IC replacement, and micro-soldering services by certified technicians.</p>
+
+</div>
+
+
+
+        <div class="service-card fade-in" style="background-image: url('Data Recovery.jpg'); background-size: cover; background-position: center; position: relative;">
+
+    <div style="background: rgba(0,0,0,0.7); position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: inherit;"></div>
+
+    <div class="service-icon" style="position: relative; z-index: 1;">
+
+        <i class="fas fa-database"></i>
+
+    </div>
+
+    <h3 style="position: relative; z-index: 1;">Data Recovery.jpg</h3>
+
+    <p style="position: relative; z-index: 1;">Recover lost photos, contacts, messages, and files from damaged or corrupted devices.</p>
+
+</div>
+
+
 
         </div>
 
-    </section>
+        </section>
 
 
 
@@ -1784,199 +1793,475 @@
 
     <section class="section products-section" id="products">
 
+
+
         <div class="section-title fade-in">
+
+
 
             <h2>Products & Accessories</h2>
 
+
+
             <p>Quality phones, accessories, and gadgets at competitive prices</p>
 
+
+
         </div>
+
+
 
         <div class="products-grid">
 
+
+
             <div class="product-card fade-in">
 
-                <div class="product-image">
 
-                    <i class="fas fa-mobile-screen-button"></i>
 
-                    <span class="product-badge">NEW</span>
+                <div class="product-image" style="overflow: hidden;">
 
-                </div>
+
+
+    <img src="Latest Smartphones.jpg" alt="Latest Smartphones" style="width: 100%; height: 100%; object-fit: cover;">
+
+
+
+    <span class="product-badge">NEW</span>
+
+
+
+</div>
+
+
+
+
+
+
 
                 <div class="product-info">
+
+
 
                     <h3>Latest Smartphones</h3>
 
+
+
                     <div class="product-price">Contact for Pricing</div>
+
+
 
                     <p>Brand new and certified pre-owned iPhones, Samsung, Xiaomi, and more. All devices tested and guaranteed.</p>
 
+
+
                     <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">Inquire Now</a>
 
+
+
                 </div>
+
+
 
             </div>
 
+
+
             <div class="product-card fade-in">
 
-                <div class="product-image">
 
-                    <i class="fas fa-headphones"></i>
 
-                </div>
+                <div class="product-image" style="overflow: hidden;">
+
+
+
+    <img src="Premium Accessories.jpg" alt="Premium Accessories" style="width: 100%; height: 100%; object-fit: cover;">
+
+
+
+</div>
+
+
+
+
+
+
 
                 <div class="product-info">
+
+
 
                     <h3>Premium Accessories</h3>
 
+
+
                     <div class="product-price">From ₦2,500</div>
+
+
 
                     <p>Original chargers, earphones, cases, screen protectors, and cables for all phone models.</p>
 
+
+
                     <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">View Stock</a>
 
-                </div>
+
+
+                  </div>
+
+
+
+
+
+
 
             </div>
 
+
+
+
+
+
+
             <div class="product-card fade-in">
 
-                <div class="product-image">
 
-                    <i class="fas fa-battery-bolt"></i>
 
-                </div>
+
+
+
+
+                <div class="product-image" style="overflow: hidden;">
+
+
+
+    <img src="Power Banks.jpg" alt="Power Banks" style="width: 100%; height: 100%; object-fit: cover;">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
 
                 <div class="product-info">
+
+
+
+
+
+
 
                     <h3>Power Banks</h3>
 
+
+
+
+
+
+
                     <div class="product-price">From ₦8,000</div>
+
+
+
+
+
+
 
                     <p>High-capacity power banks from 10,000mAh to 30,000mAh. Fast charging supported.</p>
 
+
+
+
+
+
+
                     <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">Order Now</a>
+
+
+
+
+
+
 
                 </div>
 
+
+
+
+
+
+
             </div>
+
+
 
             <div class="product-card fade-in">
 
-                <div class="product-image">
 
-                    <i class="fas fa-memory"></i>
 
-                </div>
+                <div class="product-image" style="overflow: hidden;">
+
+
+
+    <img src="Memory card.jpg" alt="Memory Cards" style="width: 100%; height: 100%; object-fit: cover;">
+
+
+
+</div>
+
+
+
+
+
+
 
                 <div class="product-info">
 
+
+
                     <h3>Memory Cards</h3>
+
+
 
                     <div class="product-price">From ₦3,000</div>
 
+
+
                     <p>Original SanDisk and Samsung memory cards from 32GB to 512GB. 5-year warranty included.</p>
+
+
 
                     <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">Check Availability</a>
 
+
+
                 </div>
+
+
 
             </div>
 
-        </div>
+            <!-- New Product 5 -->
+
+<div class="product-card fade-in">
+
+    <div class="Bluetooth" style="overflow: hidden;">
+
+        <img src="Bluetooth.jpg" alt="Product Name" style="width: 100%; height: 100%; object-fit: cover;">
+
+        <span class="product-badge">Available</span>
+
+    </div>
+
+</div>
+
+            <!-- New Product 6 -->
+
+<div class="product-card fade-in">
+
+    <div class="Check For More" style="overflow: hidden;">
+
+        <img src="Check For More.jpg" alt="Product Name" style="width: 100%; height: 100%; object-fit: cover;">
+
+        <span class="product-badge">Available</span>
+
+    </div>
+
+</div>
+
+            
 
     </section>
 
 
 
+
+
+
+
     <!-- About Section -->
+
+
 
     <section class="section" id="about">
 
+
+
         <div class="section-title fade-in">
+
+
 
             <h2>About Us</h2>
 
+
+
             <p>Meet the expert behind G-G Tech & Communication</p>
 
+
+
         </div>
+
+
 
         <div class="about-content">
 
+
+
             <div class="about-image fade-in">
+
+
 
                 <div class="owner-card">
 
-                    <div class="owner-avatar">
 
-                        <i class="fas fa-user-graduate"></i>
 
-                    </div>
+                    <div class="owner-avatar" style="background: url('Adebesty.jpg') center/cover no-repeat; border: 4px solid var(--primary); box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);">
+
+
+
+</div>
+
+
+
+
+
+
 
                     <h3>ENGR. ADEBESTY</h3>
 
+
+
                     <p class="owner-title">Founder & Lead Engineer</p>
+
+
 
                     <p class="owner-bio">
 
+
+
                         With years of experience in mobile technology and electronics engineering, Engr. Adebesty founded G-G Tech to provide reliable, professional phone repair and sales services. Certified in micro-soldering and board-level repairs, he ensures every device receives expert care.
+
+
 
                     </p>
 
+
+
                     <div style="margin-top: 1.5rem;">
+
+
 
                         <i class="fas fa-certificate" style="color: var(--primary); margin-right: 0.5rem;"></i>
 
+
+
                         <span style="color: #888;">Certified Mobile Engineer</span>
+
+
 
                     </div>
 
+
+
                 </div>
 
+
+
             </div>
+
+
 
             <div class="about-text fade-in">
 
+
+
                 <h3 style="font-family: 'Orbitron', sans-serif; font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary);">Why Choose G-G Tech?</h3>
+
+
 
                 <p style="color: #aaa; line-height: 1.8; margin-bottom: 2rem;">
 
+
+
                     At G-G Tech and Communication, we combine technical expertise with quality customer service. Whether you need a quick screen repair, a complex board-level fix, or want to purchase a new device, we provide solutions that last.
+
+
 
                 </p>
 
+
+
                 <div class="stats">
 
+
+
                     <div class="stat-item">
+
+
 
                         <div class="stat-number" data-target="5000">0</div>
 
+
+
                         <div class="stat-label">Repairs Completed</div>
+
+
 
                     </div>
 
+
+
                     <div class="stat-item">
+
+
 
                         <div class="stat-number" data-target="1000">0</div>
 
+
+
                         <div class="stat-label">Happy Customers</div>
 
+
+
                     </div>
+
+
 
                     <div class="stat-item">
 
+
+
                         <div class="stat-number" data-target="5">0</div>
+
+
 
                         <div class="stat-label">Years Experience</div>
 
+
+
                     </div>
+
+
 
                 </div>
 
+
+
             </div>
 
+
+
         </div>
+
+
 
     </section>
 
@@ -2008,7 +2293,7 @@
 
                         <h4>Address</h4>
 
-                        <p>Opposite Ayegun college, Femaco shopping complex, Ogbomoso, Oyo State, Nigeria<br>[City, State]</p>
+                        <p>Opposite Ayegun college, Femaco shopping complex, Ogbomoso<br>[Oyo State, Nigeria]</p>
 
                     </div>
 
@@ -2060,49 +2345,79 @@
 
             <div class="contact-form fade-in">
 
-                <form onsubmit="handleSubmit(event)">
+                <div class="contact-form fade-in">
 
-                    <div class="form-group">
+    <form onsubmit="sendToWhatsApp(event)">
 
-                        <label>Your Name</label>
+        <div class="form-group">
 
-                        <input type="text" placeholder="Enter your name" required>
+            <label>Name</label>
 
-                    </div>
+            <input type="text" id="name" placeholder="Enter your name" required>
 
-                    <div class="form-group">
+        </div>
 
-                        <label>Phone Number</label>
+        <div class="form-group">
 
-                        <input type="tel" placeholder="Enter your phone number" required>
+            <label>Phone Number</label>
 
-                    </div>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
 
-                    <div class="form-group">
+        </div>
 
-                        <label>Service Needed</label>
+        <div class="form-group">
 
-                        <input type="text" placeholder="e.g., Screen Repair, Phone Purchase, etc.">
+            <label>Service Needed</label>
 
-                    </div>
+            <input type="text" id="service" placeholder="e.g., Phone Repair, Phone Purchase, etc.">
 
-                    <div class="form-group">
+        </div>
 
-                        <label>Message</label>
+        <div class="form-group">
 
-                        <textarea placeholder="Describe your issue or inquiry..."></textarea>
+            <label>Feedback</label>
 
-                    </div>
+            <textarea id="message" placeholder="Describe your issue or inquiry..."></textarea>
 
-                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        </div>
 
-                        <i class="fas fa-paper-plane"></i> Send Message
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
 
-                    </button>
+            <i class="fas fa-paper-plane"></i> Feedback 
 
-                </form>
+        </button>
 
-            </div>
+    </form>
+
+</div>
+
+
+
+<script>
+
+function sendToWhatsApp(e) {
+
+    e.preventDefault();
+
+    var name = document.getElementById('name').value;
+
+    var phone = document.getElementById('phone').value;
+
+    var service = document.getElementById('service').value;
+
+    var message = document.getElementById('message').value;
+
+    
+
+    var text = "Name: " + name + "%0APhone: " + phone + "%0AService: " + service + "%0AMessage: " + message;
+
+    
+
+    window.open("https://wa.me/2347011745790?text=" + text, "_blank");
+
+}
+
+</script>
 
         </div>
 
@@ -2321,9 +2636,6 @@
     </script>
 
 </body>
-
-</html>
-
 
 
 
